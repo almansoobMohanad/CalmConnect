@@ -38,11 +38,12 @@ CalmConnect is a prototype web application built with Next.js, designed to suppo
     ```
 
 3. **Set up your Gemini API key:**
-    - Create a `.env.local` file in the root directory.
-    - Add your Gemini API key:
+    - Create a `.env.local` file in the root directory of your project (at the same level as `package.json`).
+    - Add the following line to `.env.local`, replacing `your_api_key_here` with your actual Gemini API key:
       ```
       GEMINI_API_KEY=your_api_key_here
       ```
+    - Save the file. The application will automatically load this environment variable when you start the development server.
 
 ### Running the Development Server
 
