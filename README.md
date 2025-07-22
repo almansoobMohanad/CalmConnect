@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CalmConnect – Mental Health Chatbot Prototype
+
+CalmConnect is a prototype web application built with Next.js, designed to support the mental health of university students. It features a conversational chatbot powered by the Gemini API, along with resources, feedback, and community features. This project is intended for demonstration and prototyping purposes only.
+
+---
+
+## Features
+
+- Conversational chatbot for mental health support (Gemini API)
+- Resource corpus for mental health information
+- Feedback collection window
+- Online community window
+- Privacy settings
+- Modern, responsive UI
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18 or newer recommended)
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd try-app
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Set up your Gemini API key:**
+    - Create a `.env.local` file in the root directory.
+    - Add your Gemini API key:
+      ```
+      GEMINI_API_KEY=your_api_key_here
+      ```
+
+### Running the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/app/              # Main application components and pages
+src/GeminiService.tsx # Handles communication with the Gemini API
+src/GeminiPrompt.tsx  # Chatbot prompt logic
+src/app/chatbot.css   # Main styles for the chatbot and windows
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `GEMINI_API_KEY` – Your Gemini API key (**required**)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Disclaimer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is a prototype and not intended for clinical use. The chatbot does not provide medical advice. For real mental health support, please consult a professional.
+
+---
+
+## License
+
+This project is for educational and demonstration purposes only.
